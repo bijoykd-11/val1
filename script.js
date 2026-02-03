@@ -29,6 +29,11 @@ function quizResult() {
   launchConfetti();
 }
 
+function playDooronDooron() {
+  const song = document.getElementById('dooronSong');
+  song.play();
+}
+
 // Confetti animation
 function launchConfetti() {
   for (let i = 0; i < 30; i++) {
