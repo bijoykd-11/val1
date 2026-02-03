@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine for Anisha ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Intro -->
+  <div id="intro" class="section" style="display:block;">
+    <h1>Hey Anisha 💖</h1>
+    <div class="message-box">Thanks for making it till here, let’s get started!</div>
+    <h2>Will you be my Valentine?</h2>
+    <button onclick="goToGifts(true)">Yes</button>
+    <button onclick="funnyNo()">No</button>
+    <div id="noMessage" style="color:white; margin-top:20px;"></div>
+  </div>
+
+  <!-- Gifts -->
+  <div id="gifts" class="section">
+    <h1>Here are your Valentine’s gifts 🎁</h1>
+    <button onclick="showSection('poem')">Read a Poem</button>
+    <button onclick="showSection('letter')">Read a Letter</button>
+    <button onclick="showSection('music')">Play Music</button>
+    <button onclick="showSection('quiz')">Check our Compatibility 💘</button>
+  </div>
+
+  <!-- Poem -->
+  <div id="poem" class="section">
+    <h2>🌹 A Poem for You 🌹</h2>
+    <div class="scroll">
+      Roses are red,<br>
+      Violets are blue,<br>
+      My life is brighter,<br>
+      All because of you 💕
+    </div>
+    <button onclick="showSection('gifts')">Back to Gifts</button>
+  </div>
+
+  <!-- Letter -->
+  <div id="letter" class="section">
+    <h2>💌 A Letter 💌</h2>
+    <img class="teddy" src="https://i.imgur.com/4AiXzf8.jpg" alt="Teddy dropping letter">
+    <p class="message-box">Dear Anisha,<br><br>Thank you for being the best part of my life. You make every day feel special, and I’m so lucky to call you mine. Forever yours, Mr. 0 Efforts 💖</p>
+    <button onclick="showSection('gifts')">Back to Gifts</button>
+  </div>
+
+  <!-- Music -->
+  <div id="music" class="section">
+    <h2>🎶 A Song for You 🎶</h2>
+    <img class="vinyl" src="https://i.imgur.com/8Km9tLL.jpg" alt="Vinyl stereo">
+    <audio controls autoplay>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+    <button onclick="showSection('gifts')">Back to Gifts</button>
+  </div>
+
+  <!-- Quiz -->
+  <div id="quiz" class="section">
+    <h2>💘 Compatibility Quiz 💘</h2>
+    <form id="quizForm">
+      <p>1. Who steals fries more often?</p>
+      <label><input type="radio" name="q1"> Me</label><br>
+      <label><input type="radio" name="q1"> You</label><br><br>
+
+      <p>2. Our favorite date night snack?</p>
+      <label><input type="radio" name="q2"> Pizza 🍕</label><br>
+      <label><input type="radio" name="q2"> Ice Cream 🍨</label><br><br>
+
+      <p>3. Who sends memes at midnight?</p>
+      <label><input type="radio" name="q3"> Me</label><br>
+      <label><input type="radio" name="q3"> You</label><br><br>
+
+      <button type="button" onclick="quizResult()">Submit Quiz</button>
+    </form>
+    <div id="quizResult" style="margin-top:20px; font-size:1.5em; color:#ff3366;"></div>
+    <button onclick="showSection('closing')">Go to Closing</button>
+  </div>
+
+  <!-- Closing -->
+  <div id="closing" class="section">
+    <h2>💌 Closing Message 💌</h2>
+    <p class="message-box">Thanks for playing along, Anisha 💖.<br>No matter the score, you’re my forever Valentine.<br><br>— From Mr. 0 Efforts 💌</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
