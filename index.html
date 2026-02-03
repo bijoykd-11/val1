@@ -45,15 +45,27 @@
     <button onclick="showSection('gifts')">Back to Gifts</button>
   </div>
 
-  <!-- Music -->
-  <div id="music" class="section">
-    <h2>🎶 A Song for You 🎶</h2>
-    <img class="vinyl" src="https://i.imgur.com/8Km9tLL.jpg" alt="Vinyl stereo">
-    <audio controls autoplay>
-      <source src="https://www.jiosaavn.com/song/dooron-dooron/Ax1YADxKblw" type="audio/mpeg">
-    </audio>
-    <button onclick="showSection('gifts')">Back to Gifts</button>
-  </div>
+<!-- Music -->
+<div id="music" class="section">
+  <h2>🎶 A Song for You 🎶</h2>
+  <img class="vinyl" src="https://i.imgur.com/8Km9tLL.jpg" alt="Vinyl stereo">
+
+  <!-- Dancing GIF for fun -->
+  <img src="https://media.giphy.com/media/3o7abldj0b3rxrZUxW/giphy.gif" 
+       alt="Dancing gif" style="width:150px; margin:20px;">
+
+  <!-- Play button -->
+  <button onclick="playDooronDooron()">Play Dooron Dooron 🎵</button>
+
+  <!-- Audio element -->
+<iframe width="300" height="200" 
+  src="https://www.youtube.com/embed/LV_wiOhO40Q?si=zZ3K8o3F-ymGMMKU" frameborder="0" allow="autoplay;
+  encrypted-media" allowfullscreen>
+</iframe>
+
+  <button onclick="showSection('gifts')">Back to Gifts</button>
+</div>
+
 
   <!-- Quiz -->
   <div id="quiz" class="section">
